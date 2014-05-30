@@ -160,30 +160,31 @@ if ($action=="")    /* display the contact form */
     { 
     ?> 
     <form role="form" action="" method="POST" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="name">Nome</label>
-                                <input class="form-control" type="text" name="name" placeholder="Nome">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="email">E-mail</label>
-                                <input class="form-control" type="email" name="email" placeholder="E-mail">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="message">Mensagem</label>
-                                <textarea placeholder="Mensagem" class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-lg btn-success">Enviar</button>
-                            </div>
-                        </div>
+    <input type="hidden" name="action" value="submit"> 
+    <div class="row">
+        <div class="form-group col-xs-12 floating-label-form-group">
+            <label for="name">Nome</label>
+            <input class="form-control" type="text" name="name" placeholder="Nome">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-xs-12 floating-label-form-group">
+            <label for="email">E-mail</label>
+            <input class="form-control" type="email" name="email" placeholder="E-mail">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-xs-12 floating-label-form-group">
+            <label for="message">Mensagem</label>
+            <textarea name="message" placeholder="Mensagem" class="form-control" rows="5"></textarea>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="form-group col-xs-12">
+            <button type="submit" class="btn btn-lg btn-success" value="Enviar Email">Enviar</button>
+        </div>
+    </div>
                     </form>
     <?php 
     }  
