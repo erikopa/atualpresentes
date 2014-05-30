@@ -15,6 +15,7 @@
     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
+    <link href="http://allfont.net/css/?fonts=embassy-bt" rel="stylesheet" type="text/css" />
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
@@ -39,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Atual Presentes</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +53,7 @@
                         <a href="#portfolio">Produtos</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Sobre</a>
+                        <a href="#about">Empresa</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contato</a>
@@ -70,7 +71,9 @@
                 <div class="col-lg-12">
                   <div class="intro-text">
                     <hr class="star-light">
-                        <span class="skills"><img class="img-responsive" src="img/logoAtualPresentes.png" alt="">Utilidades e decorações, Bijuterias e Artigos para presentes</span>
+                    	<span class="name">Atual Presentes</span>
+                        <span class="skills">
+                        <img class="img-responsive" src="img/logoAtualPresentes.png" alt="">Utilidades e decorações, Bijuterias e Artigos para presentes</span>
                     </div>
                 </div>
             </div>
@@ -154,21 +157,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>Sobre a Empresa</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>Texto sobre a empresa</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                    <p>Missão, Visão e Valores</p>
                 </div>
             </div>
         </div>
@@ -178,7 +176,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2>Contato</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -187,26 +185,26 @@
                     <form role="form">
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Nome</label>
                                 <input class="form-control" type="text" name="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="email">Email Address</label>
+                                <label for="email">E-mail</label>
                                 <input class="form-control" type="email" name="email" placeholder="Email Address">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="message">Message</label>
+                                <label for="message">Mensagem</label>
                                 <textarea placeholder="Message" class="form-control" rows="5"></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-lg btn-success">Send</button>
+                                <button type="submit" class="btn btn-lg btn-success">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -219,13 +217,14 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                  <div class="footer-col col-md-4">
+                    <h3>Localização</h3>
+                    <p>Rua Rio Grande do Sul, nº 311, Centro<br>
+                      CEP: 69908-000<br>
+                      Rio Branco - Acre - Brasil </p>
+                  </div>
+                  <div class="footer-col col-md-4">
+                    <h3>Nas Redes Sociais</h3>
                         <ul class="list-inline">
                             <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
@@ -240,8 +239,8 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelance</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3>Sobre Empretec</h3>
+                        <p>Este é um projeto para empresa Atual Presentes idealizada no EMPRETEC realizado em Rio Branco/AC durante o período de 26 a 31 de Maio de 2014.</p>
                     </div>
                 </div>
             </div>
