@@ -199,7 +199,7 @@ else                /* send the submitted data */
 		else{         
 			$from="From: $name<$email>\r\nReturn-path: $email"; 
 			$subject="Mensagem enviada usando o formulário de contato: "; 
-			mail("youremail@yoursite.com", $subject, $message, $from); 
+			mail("erikopa@gmail.com", $subject, $message, $from); 
 			echo "E-mail enviado!"; 
 			} 
     }   
