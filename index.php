@@ -206,7 +206,7 @@ else                /* send the submitted data */
 			$params = array(
 				'api_user'  => $user,
 				'api_key'   => $pass,
-				'to'        => 'carinenunes24@hotmail.com',
+				'to'        => 'erikopa@gmail.com',
 				'subject'   => $subject,
 				'html'      => $message,
 				'from'      => $email,
