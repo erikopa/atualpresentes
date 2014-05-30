@@ -96,7 +96,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="" />
+                        <img src="http://atualpresentes.com.br/images/portfolio/3.jpg" class="img-responsive" alt="" />
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -106,7 +106,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="" />
+                        <img src="http://atualpresentes.com.br/images/portfolio/5.jpg" class="img-responsive" alt="" />
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -116,39 +116,10 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="" />
+                        <img src="http://atualpresentes.com.br/images/portfolio/7.jpg" class="img-responsive" alt="" />
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="" />
-                    </a>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -157,7 +128,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Sobre a Empresa</h2>
+                    <h2>A  Empresa</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -166,7 +137,8 @@
                     <p>Texto sobre a empresa</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Missão, Visão e Valores</p>
+                    <p>Missão</p>
+                    <p>A missão da empresa é oferecer produtos de qualidade, com bijuterias de design diversificado, variedade de acessórios e atendimento de excelência.</p>
                 </div>
             </div>
         </div>
@@ -182,23 +154,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form role="form">
+                <?php 
+$action=$_REQUEST['action']; 
+if ($action=="")    /* display the contact form */ 
+    { 
+    ?> 
+    <form role="form" action="" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
                                 <label for="name">Nome</label>
-                                <input class="form-control" type="text" name="name" placeholder="Name">
+                                <input class="form-control" type="text" name="name" placeholder="Nome">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
                                 <label for="email">E-mail</label>
-                                <input class="form-control" type="email" name="email" placeholder="Email Address">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
                                 <label for="message">Mensagem</label>
-                                <textarea placeholder="Message" class="form-control" rows="5"></textarea>
+                                <textarea placeholder="Mensagem" class="form-control" rows="5"></textarea>
                             </div>
                         </div>
                         <br>
@@ -208,6 +185,25 @@
                             </div>
                         </div>
                     </form>
+    <?php 
+    }  
+else                /* send the submitted data */ 
+	{ 
+		$name=$_REQUEST['name']; 
+		$email=$_REQUEST['email']; 
+		$message=$_REQUEST['message']; 
+		if (($name=="")||($email=="")||($message=="")) 
+			{ 
+			echo "Todos os campos são de preenchimento obrigatório, por favor preencha <a href=\'\'> o contato </a> novamente."; 
+			} 
+		else{         
+			$from="From: $name<$email>\r\nReturn-path: $email"; 
+			$subject="Mensagem enviada usando o formulário de contato: "; 
+			mail("youremail@yoursite.com", $subject, $message, $from); 
+			echo "E-mail enviado!"; 
+			} 
+    }   
+?> 
                 </div>
             </div>
         </div>
@@ -226,15 +222,9 @@
                   <div class="footer-col col-md-4">
                     <h3>Nas Redes Sociais</h3>
                         <ul class="list-inline">
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/pages/Atual-Presentes/498725576895243" class="btn-social btn-outline" ><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            <li><a href="http://instagram.com/carinejeisa" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -249,8 +239,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; 2014 - Your Name
-                    </div>
+                    Copyright &copy; 2014 - AtualPresentes</div>
                 </div>
             </div>
         </div>
@@ -275,19 +264,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Bijouterias</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <img src="http://atualpresentes.com.br/images/portfolio/3.jpg" class="img-responsive img-centered" alt="">
+                            <p>Completa linha de artigos de bijouterias, para presentear e se presentear</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -306,19 +288,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Presentes</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <img src="http://atualpresentes.com.br/images/portfolio/5.jpg" class="img-responsive img-centered" alt="">
+                            <p>Uma Linha de produtos para presentes, para homens, mulheres, crianças e datas especiais, como Dias das Mães, Dias dos Pais, Dia das Crianças, Natal e Aniversários.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
                         </div>
                     </div>
                 </div>
@@ -337,19 +312,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Diversas Utilidades</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <img src="http://atualpresentes.com.br/images/portfolio/7.jpg" class="img-responsive img-centered" alt="">
+                            <p>Contamos com uma linha extensa de bonés, chapéus, radios 'USB' , lanternas, transmissor de MP3 veicular, cabos de energia, extensões elétricas, e muito mais venha conferir.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
                         </div>
                     </div>
                 </div>
